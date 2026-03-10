@@ -1,36 +1,34 @@
-# 🏺 Wisdom Artisan (ระบบฐานข้อมูลภูมิปัญญาท้องถิ่น)
+# 🏺 Wisdom Artisan
 
-**Wisdom Artisan** เป็นแพลตฟอร์มดิจิทัลที่ออกแบบมาเพื่อรวบรวม จัดเก็บ และเผยแพร่ข้อมูลของ "ปราชญ์ชาวบ้าน" หรือช่างฝีมือท้องถิ่น เพื่อเป็นการอนุรักษ์ภูมิปัญญาแขนงต่างๆ และช่วยให้บุคคลทั่วไปสามารถค้นหาข้อมูล ติดต่อ หรือเดินทางไปยังแหล่งเรียนรู้ได้ง่ายขึ้น
+แพลตฟอร์มดิจิทัลสำหรับรวบรวมและเผยแพร่ข้อมูลปราชญ์ชาวบ้านและช่างฝีมือท้องถิ่น เพื่ออนุรักษ์ภูมิปัญญาและเชื่อมต่อผู้สนใจเข้าถึงแหล่งเรียนรู้ได้ง่ายขึ้น
 
-## ✨ ฟีเจอร์หลัก (Key Features)
+## ✨ Features
 
-- **ระบบจัดการข้อมูลปราชญ์ (Artisan Management):** ระบบ CRUD สำหรับเพิ่ม แก้ไข และลบข้อมูลช่างฝีมือ รวมถึงการแยกหมวดหมู่ตามประเภทงานฝีมือ
-- **คลังภาพและผลงาน (Media Gallery):** แสดงภาพผลงาน รางวัลเชิดชูเกียรติ และวิดีโอประกอบการเรียนรู้
-- **ระบบค้นหาและกรองข้อมูล (Search & Filters):** ค้นหาปราชญ์ตามชื่อ หมวดหมู่ หรือพื้นที่จังหวัด/อำเภอ
-- **แผนที่นำทาง (Interactive Map):** แสดงตำแหน่งที่ตั้งของช่างฝีมือแต่ละท่านผ่าน Google Maps/Leaflet.js เพื่อความสะดวกในการเดินทาง
-- **ส่วนจัดการระบบ (Admin Dashboard):** หน้าต่างจัดการสำหรับเจ้าหน้าที่ในการตรวจสอบและอัปเดตข้อมูลให้เป็นปัจจุบัน
+| Feature | Description |
+|---|---|
+| **Artisan Management** | ระบบ CRUD จัดการข้อมูลช่างฝีมือ พร้อมหมวดหมู่ตามประเภทงาน |
+| **Media Gallery** | คลังภาพผลงาน รางวัล |
+| **Search & Filters** | ค้นหาตามชื่อ หมวดหมู่ หรือพื้นที่จังหวัด/อำเภอ |
+| **Interactive Map** | แผนที่แสดงตำแหน่งช่างฝีมือ |
+| **Admin Dashboard** | หน้าจัดการสำหรับเจ้าหน้าที่อัปเดตข้อมูล |
 
-## 🛠 เทคโนโลยีที่ใช้ (Tech Stack)
+## 🛠 Tech Stack
 
-### Frontend
-- **Framework:** Nuxt.js (Vue.js Ecosystem)
-- **Styling:** Tailwind CSS
-- **Interactive Map:** Leaflet.js
+**Frontend** — Nuxt.js · Tailwind CSS  
+**Backend** — Node.js · Express · PostgreSQL
 
-### Backend
-- **Runtime:** Node.js
-- **Database:** PostgreSQL
-- **ORM:** (เช่น Prisma หรือ TypeORM - ระบุตามที่คุณใช้จริง)
+## 🚀 Getting Started
 
-## 🚀 การเริ่มต้นใช้งาน (Getting Started)
+**Prerequisites:** Node.js 18+ · PostgreSQL
 
-### การเตรียมความพร้อม (Prerequisites)
-- Node.js (แนะนำ version 18 ขึ้นไป)
-- PostgreSQL Database
+```bash
+# Clone
+git clone https://github.com/FoamNR/wisdom-artisan.git
+cd wisdom-artisan
 
-### ขั้นตอนการติดตั้ง (Installation)
+# Backend
+cd backend && npm install && nodemon index.js
 
-1. **Clone Repository:**
-   ```bash
-   git clone [https://github.com/FoamNR/wisdom-artisan.git](https://github.com/FoamNR/wisdom-artisan.git)
-   cd wisdom-artisan
+# Frontend (new terminal)
+cd wisdom-artisan && npm install && npm run dev
+```
