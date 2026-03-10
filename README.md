@@ -17,6 +17,21 @@
 **Frontend** — Nuxt.js · Tailwind CSS  
 **Backend** — Node.js · Express · PostgreSQL
 
+## ⚙️ Environment Variables
+
+สร้างไฟล์ `.env` ในโฟลเดอร์ `backend/` และกำหนดค่าดังนี้
+
+```dotenv
+DB_HOST=
+DB_USER=
+DB_PASS=
+DB_DATABASE=
+
+JWT_SECRET=
+
+ENCRYPTION_KEY=
+```
+
 ## 🚀 Getting Started
 
 **Prerequisites:** Node.js 18+ · PostgreSQL
